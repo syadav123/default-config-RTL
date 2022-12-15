@@ -117,7 +117,7 @@
                     "label": "Rural Ward",
                     "placeholder": "Enter ward",
                     "field": "address2"
-                },
+                }
             }
         }
 }
