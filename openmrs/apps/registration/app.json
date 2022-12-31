@@ -111,9 +111,14 @@
             },
             "patientSearch": {
                 "address": {
-                    "label": "Rural Ward",
-                    "placeholder": "Enter ward",
+                    "label": "الجناح الريفي",
+                    "placeholder": "أدخل الجناح",
                     "field": "address2"
+                },
+                "customAttributes": {
+                    "label": "اسم المريض",
+                    "placeholder": "اسم المريض",
+                    "fields": ["givenNameLocal", "middleNameLocal", "familyNameLocal"]
                 }
             }
         }

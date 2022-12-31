@@ -48,9 +48,10 @@
   "MULTITAG_KEY": "MultiTag",
   "OCCUPIED_VALUE_KEY": "Occupied",
   "AVAILABLE_VALUE_KEY": "Available",
-  "MODULE_LABEL_TO_DISCHARGE_KEY": "To Discharge",
-  "MODULE_LABEL_ADMITTED_KEY": "Admitted",
-  "MODULE_LABEL_TO_ADMIT_KEY": "To Admit",
+  "MODULE_LABEL_TO_DISCHARGE_KEY": "للخروج",
+  "MODULE_LABEL_ADMITTED_KEY": "محجوز داخليا",
+  "MODULE_LABEL_TO_ADMIT_KEY": "للحجز الداخلي",
+  "MODULE_LABEL_ALL_KEY": "الكل",
 
   "PATIENT_ADT_PAGE_KEY":"Patient ADT Page"
 }

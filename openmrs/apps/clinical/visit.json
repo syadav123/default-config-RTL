@@ -14,7 +14,7 @@
                 "displayOrder": 0,
                 "title": "Vitals Flowsheet",
                 "config": {
-                    "groupBy": "encounters",
+                    "groupBy": "obstime",
                     "obsConcepts": [
                         "Pulse",
                         "Diastolic",
@@ -27,6 +27,109 @@
                         "M/C Days"
                     ],
                     "labConcepts": ""
+                }
+            },
+			"vitals":{
+                "type":"observation",
+                "translationKey":"DASHBOARD_TITLE_VITALS_KEY",
+                "displayOrder":1,
+                "config":{
+					"groupBy": "encounters",
+                    "conceptNames":[
+                        "Pulse",
+                        "Diastolic",
+                        "Systolic",
+                        "Temperature",
+                        "RR",
+                        "SPO2",
+                        "Height",
+                        "WEIGHT",
+                        "M/C Days",
+						"History and Examination"
+                    ],
+                    "numberOfVisits":1
+                }
+            },
+			"diagnoses":{
+                "type": "diagnosis",
+                "displayOrder": 4,
+                "config": {
+                    "translationKey" : "DISCHARGE_SUMMARY_DIAGNOSIS_KEY",
+                    "showCertainty": true,
+                    "hideVisitDate": true,
+                    "showOrder": false,
+                    "showDetailsButton": true
+                }
+            },
+            "labOrders": {
+                "type": "labOrders",
+                "displayOrder": 4,
+                "config": {
+                    "translationKey": "VISIT_TITLE_LAB_ORDERS_KEY",
+                    "showChart": true,
+                    "showTable": false,
+                    "showOrders": true,
+                    "showNormalLabResults": false,
+                    "showCommentsExpanded": false,
+                    "showAccessionNotes": true,
+                    "numberOfVisits": 10,
+                    "showDetailsButton": false,
+                    "hideVisitDate": true
+                }
+            },
+            "prescriptions":{
+                "translationKey":"DASHBOARD_TITLE_PRESCRIPTIONS_KEY",
+                "type":"prescription",
+                "displayOrder":5,
+                "hideVisitDate": true,
+                "config":{
+                    "hideVisitDate": true,
+                    "showFlowSheet":true,
+                    "showListView":true,
+                    "showRoute":true,
+                    "showDrugForm":true,
+                    "numberOfVisits":5,
+                    "showOtherActive":true
+                }
+            },
+            "followUp": {
+                "type": "followUp",
+                "translationKey": "DASHBOARD_TITLE_FOLLOWUP_KEY",
+                "displayOrder":6,
+                "config": {
+                    "conceptNames":[
+                        "Return visit date",
+                        "Reason for visit"
+                    ]
+                }
+            },
+			"labInvestigations":{
+                "type": "investigationResult",
+                "displayOrder": 6,
+                "config": {
+                    "translationKey":"LAB_INVESTIGATION",
+                    "showChart": true,
+                    "showTable": false,
+                    "showNormalLabResults": true,
+                    "showCommentsExpanded": true,
+                    "showAccessionNotes": true,
+                    "numberOfVisits": 10,
+                    "initialAccessionCount": 1,
+                    "latestAccessionCount": 1
+                }
+            },
+            "Treatments": {
+                "type": "treatment",
+                "displayOrder": 6,
+                "config": {
+                    "translationKey": "VISIT_TITLE_TREATMENTS_KEY",
+                    "showFlowSheet": true,
+                    "showListView": true,
+                    "showOtherActive": false,
+                    "showDetailsButton": true,
+                    "showRoute": true,
+                    "showDrugForm": true,
+                    "showProvider":false
                 }
             },
             "pacsOrders":{
@@ -62,6 +165,21 @@
                     "addressFields": ["address1", "address2", "cityVillage", "countyDistrict"]
                 }
             },
+            
+            "consultationNotes":{
+                "type":"consultationNotes",
+                "translationKey":"DASHBOARD_TITLE_CONSULTATION_NOTES_KEY",
+                "displayOrder":2,
+                "config":{
+                    "conceptNames":[
+                        "Chief Complaint Data",
+                        "History of present illness",
+                        "Smoking status",
+                        "Consultation Note"
+                    ],
+                    "numberOfVisits":2
+                }
+            },
             "admissionDetails":{
                 "type": "admissionDetails",
                 "displayOrder": 1,
@@ -94,9 +212,36 @@
                 "displayOrder": 4,
                 "config": {
                     "translationKey" : "DISCHARGE_SUMMARY_DIAGNOSIS_KEY",
-                    "showCertainty": false,
+                    "showCertainty": true,
+                    "hideVisitDate": true,
                     "showOrder": false,
                     "showDetailsButton": true
+                }
+            },
+            "prescriptions":{
+                "translationKey":"DASHBOARD_TITLE_PRESCRIPTIONS_KEY",
+                "type":"prescription",
+                "displayOrder":5,
+                "hideVisitDate": true,
+                "config":{
+                    "hideVisitDate": true,
+                    "showFlowSheet":true,
+                    "showListView":true,
+                    "showRoute":true,
+                    "showDrugForm":true,
+                    "numberOfVisits":5,
+                    "showOtherActive":true
+                }
+            },
+            "followUp": {
+                "type": "followUp",
+                "translationKey": "DASHBOARD_TITLE_FOLLOWUP_KEY",
+                "displayOrder":6,
+                "config": {
+                    "conceptNames":[
+                        "Return visit date",
+                        "Reason for visit"
+                    ]
                 }
             },
             "clinicalNotes":{
