@@ -53,13 +53,13 @@
   "DISCHARGE_SUMMARY_TREATMENTS_KEY":"العلاجات",
 
 
-  "OBSERVATIONS_BOARD_LABEL_KEY":"مراقبة",
+  "OBSERVATIONS_BOARD_LABEL_KEY":"سجل المراقبات",
   "MEDICATIONS_BOARD_LABEL_KEY":"الأدوية",
-  "ORDERS_BOARD_LABEL_KEY":"أوامر",
-  "BACTERIOLOGY_BOARD_LABEL_KEY":"علم الجراثيم",
-  "CONSULTATION_BOARD_LABEL_KEY":"التشاور",
-  "DISPOSITION_BOARD_LABEL_KEY":"تنظيم",
-  "DIAGNOSIS_BOARD_LABEL_KEY":"لوحة التشخيص",
+  "ORDERS_BOARD_LABEL_KEY":"الطلبات",
+  "BACTERIOLOGY_BOARD_LABEL_KEY":"الزرع الجرثومي",
+  "CONSULTATION_BOARD_LABEL_KEY":"الاستشارات",
+  "DISPOSITION_BOARD_LABEL_KEY":"تخريج المريض",
+  "DIAGNOSIS_BOARD_LABEL_KEY":"سجل التشخيص",
 
   "CLINICAL_ORDER_RADIOLOGY_NEED_PRINT":"طلب الأشعة السريري بحاجة إلى طباعة" ,
   "CLINICAL_ORDER_RADIOLOGY_NEED_PRINT_BUTTON":"طلب الأشعة السريرية بحاجة إلى زر طباعة",
